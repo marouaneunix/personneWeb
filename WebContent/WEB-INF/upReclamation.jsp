@@ -13,17 +13,18 @@
 <div class="container">
 	<header class="row">
 		<div class="col-12">
-			<h1 class="primary-title" >Gestion des Personnes</h1>
+			<h1 class="primary-title" >Gestion des Reclamation</h1>
 		</div>
 	</header>
 	<section class="row">
 		<article>
-		<form action="contoleur.do" method="post">
+		<form action="contoleur.rec" method="post">
 			<table>
 				<tr>
 					<td>Nom :<td>
-					<td><input type="text" name="nomPersonne" value="${ nomPersonne }"/></td>
-					<td style="display:none;" ><input type="text" name="nom" value="${ nomPersonne }"/></td>
+					<td><h4><c:out value="${nomPersonne}" /></h4></td>
+					<td><textarea class="textar" name="commentaire" rows="7" cols="40"><c:out value="${commentaire}" /></textarea></td>
+					<td style="display:none;" ><input type="text" name="id" value="${id}"/></td>
 				<tr>
 				<tr>
 					<td><input class="button-success" type="submit" name="action" value="Update" /></td>
